@@ -69,11 +69,11 @@
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
-  color: #dff2fa;
+  color: #ffffff;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
-  color: #dff2fa;
+  color: #ffffff;
   -webkit-transform: rotateX(90deg) translateY(-23px);
   -moz-transform: rotateX(90deg) translateY(-23px);
   transform: rotateX(90deg) translateY(-23px);
@@ -82,16 +82,13 @@
 #cssmenu > ul > li > a::before {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: -1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 16px 20px;
-  color: #dff2fa;
-  background: #949494;
+  color: #ffffff;
   content: attr(data-title);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -124,7 +121,7 @@
 }
 #cssmenu.small-screen > ul > li:hover > a,
 #cssmenu.small-screen > ul > li > a:hover {
-  color: #dff2fa;
+  color: #ffffff;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
@@ -159,8 +156,8 @@
   height: 3px;
 }
 #cssmenu.small-screen #menu-button.menu-opened:after {
-  border-top: 2px solid #dff2fa;
-  border-bottom: 2px solid #dff2fa;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 #cssmenu.small-screen #menu-button:before {
   content: "";
@@ -173,5 +170,5 @@
   background: #ffffff;
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
-  background: #dff2fa;
+  background: #ffffff;
 }
