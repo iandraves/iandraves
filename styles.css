@@ -76,7 +76,7 @@
   -webkit-transform: rotateX(90deg) translateY(-23px);
   -moz-transform: rotateX(90deg) translateY(-23px);
   transform: rotateX(90deg) translateY(-23px);
-  -ms-transform: none;
+  -ms-transform: translateY(- -18px);
 }
 #cssmenu > ul > li > a::before {
   position: absolute;
