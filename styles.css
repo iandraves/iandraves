@@ -116,7 +116,7 @@
 #cssmenu.small-screen.align-center {
   float: none;
   display: block;
-  border-top: 1px solid rgba(100, 100, 100, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 #cssmenu.small-screen > ul > li:hover > a,
 #cssmenu.small-screen > ul > li > a:hover {
