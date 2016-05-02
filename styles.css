@@ -24,6 +24,9 @@
   line-height: 0;
   height: 0;
 }
+.center {
+    text-align: center;
+}
 #cssmenu #menu-button {
   display: none;
 }
@@ -102,7 +105,7 @@
 }
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
-  
+
 }
 #cssmenu.small-screen {
   width: 100%;
@@ -138,7 +141,7 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  
+
 }
 #cssmenu.small-screen #menu-button:after {
   content: "";
