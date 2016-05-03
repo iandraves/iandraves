@@ -27,6 +27,9 @@
 .center {
     text-align: center;
 }
+.right {
+    text-align: right;
+}
 #cssmenu #menu-button {
   display: none;
 }
