@@ -1,4 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+  background: url(background.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  h1{text-align:center;font-family:'Open Sans';color:FFFFFF;}
+  p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;font-weight:normal;color:FFFFFF;}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 *, *:before, *:after{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
