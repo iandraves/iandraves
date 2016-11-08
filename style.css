@@ -9,6 +9,10 @@ html{
 h1{text-align:center;font-family:'Open Sans';}
 p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;font-weight:normal;}
 
+#icon {
+    margin-left: 4px;
+}
+
 #link {
     color: #004179;
 }
