@@ -7,7 +7,18 @@ html{
 }
 
 h1{text-align:center;font-family:'Open Sans';}
-p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;font-weight:normal;}
+h2{text-align:center;font-family:'Open Sans';}
+b{text-align:center;font-family:'Open Sans';}
+p {text-align:center;font-family:'Open Sans';font-size:18px;}
+
+#buttonimg {
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+
+#descimg {
+    display: inline;
+}
 
 #icon {
     margin-left: 4px;
@@ -27,10 +38,14 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;fo
 }
 
 button {
-    border: 1px solid #000000;
+    vertical-align: middle;
+    font-size: 18px;
+    font-style: bold;
+    border: 2px solid #000000;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
+    padding: none;
 }
 
 button:hover {
