@@ -2,7 +2,7 @@ html{
     font-family:'Open Sans';
     height: 100%;
     background: b5d2d6;
-    background: linear-gradient(#4c6fff, #3636ff);
+    background: #4c6fff;
     background-size: cover;
 }
 
@@ -45,11 +45,11 @@ button {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    padding: none;
+    padding: 2px;
 }
 
 button:hover {
-    background: #f57676;
+    background: #bc6dff;
 }
 
 *, *:before, *:after{

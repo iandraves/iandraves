@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>SongPic</title>
             <script>
@@ -10,6 +10,7 @@
             </script>
         <script src="script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,700" rel="stylesheet">
+        <meta charset="utf-8">
         <link rel="icon" href="icon.png">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -20,18 +21,19 @@
             SongPic is a cool way to convert any picture<br />
             into music. To select a picture for SongPic to<br />
             analyze, put in a link for an image below.</p>
-            <input value="Image Link" type="text" id="picture"  onfocus="this.value==this.defaultValue?this.value='':null">
+            <input value="Image Link" type="text" id="picture" onclick="this.select()" />
             <button onclick="imgProc()">Ok</button><br /><br />
-            <img id="imageFrame"/>
+            <p id="validity"></p>
             <h2>More Information</h2>
             <p>SongPic will choose a song that makes sense in the<br />
                 context of a picture. An example would be, if you select<br />
                 a picture of something brightly colored that<br />
                 looks happy, SongPic would choose a happy song to go with<br />
                 that image. Have Fun!</p>
-            <p>
+            <p><a id="otherprograms" href="https://mrlittleman.github.io/subpages.html">Other Programs</a></p>
+            <i id="copyRight">
                 © Ian Draves 2016
-            </p>
+            </i>
         </center>
     </body>
 </html>
