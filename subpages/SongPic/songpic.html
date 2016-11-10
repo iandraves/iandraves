@@ -21,7 +21,7 @@
             SongPic is a cool way to convert any picture<br />
             into music. To select a picture for SongPic to<br />
             analyze, put in a link for an image below.</p>
-            <input value="Image Link" type="text" id="picture" onclick="this.select()" />
+            <input value="Image Link" type="text" id="picture" onclick="this.setSelectionRange(0, this.value.length)" />
             <button onclick="imgProc()">Ok</button><br /><br />
             <p id="validity"></p>
             <h2>More Information</h2>
