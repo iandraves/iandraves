@@ -25,14 +25,14 @@ button:hover {
 }
 
 button {
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
 }
 
 input {
-    border: 1px solid #000000;
+    border: 1.2px solid #000000;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
