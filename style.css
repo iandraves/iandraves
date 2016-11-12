@@ -2,7 +2,7 @@ html{
     font-family:'Open Sans';
     height: 100%;
     background: b5d2d6;
-    background: #4c6fff;
+    background: #1675ed;
     background-size: cover;
 }
 
@@ -37,7 +37,7 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     font-size: 15px;
 }
 
-button {
+#button1 {
     vertical-align: middle;
     font-size: 18px;
     font-style: bold;
@@ -48,7 +48,7 @@ button {
     padding: 2px;
 }
 
-button:hover {
+#button1:hover {
     background: #bc6dff;
 }
 
