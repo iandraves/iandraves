@@ -8,7 +8,6 @@
                     window.location.href = loc.replace('http://','https://');
                 }
             </script>
-        <script src="script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,700" rel="stylesheet">
         <meta charset="utf-8">
         <link rel="icon" href="icon.png">
@@ -23,7 +22,9 @@
             analyze, put in a link for an image below.</p>
             <input value="Image Link" type="text" id="picture" onclick="this.setSelectionRange(0, this.value.length)" />
             <button onclick="imgProc()">Ok</button><br /><br />
-            <p id="validity"></p>
+            <div id="display" class="hidden">
+                <img id="image"/><br />
+            </div>
             <h2>More Information</h2>
             <p>SongPic will choose a song that makes sense in the<br />
                 context of a picture. An example would be, if you select<br />
@@ -35,5 +36,6 @@
                 © Ian Draves 2016
             </i>
         </center>
+        <script src="script.js"></script>
     </body>
 </html>

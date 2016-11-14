@@ -55,3 +55,19 @@ input:focus {
 #otherprograms:hover {
     color: #0d00a3;
 }
+
+#image {
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
