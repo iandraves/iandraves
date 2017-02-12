@@ -61,15 +61,41 @@ function process() {
     else if (input.includes("your gender")) {
         edit.innerHTML="<b>Lukio: </b>" + "I am a robot, I do not have a gender.";
     }
-    else if (input.includes("what is the time where you are") ||
-    input.includes("your time")) {
-        edit.innerHTML="<b>Lukio: </b>" + "Hmm, my clock says it's";
+    else if (input.includes("time where you are") ||
+    input.includes("your time") || input.includes("time is it where you are")) {
+        //Getting time
+        var currentdate = new Date().toLocaleTimeString();
+
+        //Getting random number for more human like response
+        var timeres = Math.floor((Math.random() * 3) + 1);
+
+        if (timeres == 1) {
+            edit.innerHTML="<b>Lukio: </b>" + "Hmm, my clock says it's "
+            + currentdate + ".";
+        }
+        if (timeres == 2) {
+            edit.innerHTML="<b>Lukio: </b>" + "My clock says it's "
+            + currentdate + ".";
+        }
+        if (timeres == 3) {
+            edit.innerHTML="<b>Lukio: </b>" + "Looks like it's "
+            + currentdate + ".";
+        }
     }
     else if (input.includes("what time is it") || input.includes("what is the time")) {
-        //Getting time
-        var time = new Date();
-        edit.innerHTML="<b>Lukio: </b>I don't know, it depends on where you're from," +
-        "plus, you're using a computer so why not check the time on there.";
+        //Getting random number for more human like response
+        var timeres1 = Math.floor((Math.random() * 3) + 1);
+
+        if (timeres1 == 1) {
+            edit.innerHTML="<b>Lukio: </b>I don't know, it depends on where you're from," +
+            " plus, you're using a computer so why not check the time on there.";
+        }
+        if (timeres1 == 2) {
+            edit.innerHTML="<b>Lukio: </b>Adventure time! No but seriously, look at a clock.";
+        }
+        if (timeres1 == 3) {
+            edit.innerHTML="<b>Lukio: </b>Time for you to get a watch!";
+        }
     }
     else if (input.includes("*") || input.includes("+") || input.includes("times") ||
     input.includes("multiply") || input.includes("multiplied") || input.includes("divide") ||
