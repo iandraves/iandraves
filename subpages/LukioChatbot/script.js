@@ -186,7 +186,8 @@ function process() {
     }
     else if (input.includes("well,") || input.includes("ok") || input.includes("sure") ||
     input.includes("alright") || input.includes("cool") || input.includes("yeah") ||
-    input.includes("yup") || input.includes("oh") || input.includes("nice")) {
+    input.includes("yup") || input.includes("oh") || input.includes("nice") ||
+    input.includes("good")) {
         //Getting random number for more human like response
         var generalres = Math.floor((Math.random() * 3) + 1);
 
