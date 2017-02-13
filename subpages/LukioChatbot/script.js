@@ -155,7 +155,7 @@ function process() {
     }
     else if (input.includes("well,") || input.includes("ok") || input.includes("sure") ||
     input.includes("alright") || input.includes("cool") || input.includes("yeah") ||
-    input.includes("yup")) {
+    input.includes("yup") || input.includes("oh")) {
         //Getting random number for more human like response
         var generalres = Math.floor((Math.random() * 3) + 1);
 
@@ -163,10 +163,10 @@ function process() {
             edit.innerHTML="<b>Lukio: </b>Cool.";
         }
         if (generalres == 2) {
-            edit.innerHTML="<b>Lukio: </b>Okay...";
+            edit.innerHTML="<b>Lukio: </b>Okay.";
         }
         if (generalres == 3) {
-            edit.innerHTML="<b>Lukio: </b>Alright...";
+            edit.innerHTML="<b>Lukio: </b>Alright.";
         }
     }
     else if (input.includes("what") || input.includes("why") || input.includes("do you")
