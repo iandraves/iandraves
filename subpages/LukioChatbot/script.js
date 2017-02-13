@@ -41,6 +41,10 @@ function process() {
     else if (input.includes("color")) {
         edit.innerHTML="<b>Lukio: </b>" + "My favorite color is blue.";
     }
+    else if (input.includes("favorite")) {
+        edit.innerHTML="<b>Lukio: </b>" +
+        "I don't think that I really have a favorite...";
+    }
     else if (input.includes("how are you") || input.includes("how's life") ||
     input.includes("how is life") || input.includes("hows life") ||
     input.includes("how's your") || input.includes("how is your") ||
