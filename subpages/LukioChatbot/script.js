@@ -14,8 +14,22 @@ function process() {
     var edit = document.getElementById("say");
 
     //Generating response and responding
-    if (input.includes("hello") || input.includes("hi") || input.includes("hey") ||
-    input.includes("hola") || input.includes("sup")) {
+    if (input.includes("hey,")) {
+        //Getting random number for more human like response
+        var generalres = Math.floor((Math.random() * 3) + 1);
+
+        if (generalres == 1) {
+            edit.innerHTML="<b>Lukio: </b>Cool.";
+        }
+        if (generalres == 2) {
+            edit.innerHTML="<b>Lukio: </b>Okay.";
+        }
+        if (generalres == 3) {
+            edit.innerHTML="<b>Lukio: </b>Alright.";
+        }
+    }
+    else if (input.includes("hello") || input.includes("hi") || input.includes("hola") ||
+    input.includes("sup") || input.includes("hey")) {
         //Getting random number for more human like response
         var greeting = Math.floor((Math.random() * 4) + 1);
 
@@ -30,6 +44,23 @@ function process() {
         }
         if (greeting == 4) {
             edit.innerHTML="<b>Lukio: </b>Hey there!";
+        }
+    }
+    else if (input.includes("bye") || input.includes("see ya") || input.includes("farewell")) {
+        //Getting random number for more human like response
+        var byeres = Math.floor((Math.random() * 4) + 1);
+
+        if (byeres == 1) {
+            edit.innerHTML="<b>Lukio: </b>See ya later!";
+        }
+        if (byeres == 2) {
+            edit.innerHTML="<b>Lukio: </b>Have a nice day!";
+        }
+        if (byeres == 3) {
+            edit.innerHTML="<b>Lukio: </b>Bye!";
+        }
+        if (byeres == 4) {
+            edit.innerHTML="<b>Lukio: </b>Farewell my friend!";
         }
     }
     else if (input.includes("your name")) {
@@ -155,7 +186,7 @@ function process() {
     }
     else if (input.includes("well,") || input.includes("ok") || input.includes("sure") ||
     input.includes("alright") || input.includes("cool") || input.includes("yeah") ||
-    input.includes("yup") || input.includes("oh")) {
+    input.includes("yup") || input.includes("oh") || input.includes("nice")) {
         //Getting random number for more human like response
         var generalres = Math.floor((Math.random() * 3) + 1);
 
