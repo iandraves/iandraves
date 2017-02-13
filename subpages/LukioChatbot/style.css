@@ -29,3 +29,8 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     border-color: black;
     border-radius: 3px;
 }
+
+#copyRight {
+    text-align: center;
+    font-size: 15px;
+}
