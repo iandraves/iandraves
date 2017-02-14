@@ -7,8 +7,21 @@ html{
 
 h1{text-align:center;font-family:'Open Sans';}
 h2{text-align:center;font-family:'Open Sans';}
+h3{text-align:center;font-family:'Open Sans';}
+h4{text-align:center;font-family:'Open Sans';}
 b{text-align:center;font-family:'Open Sans';}
 p {text-align:center;font-family:'Open Sans';font-size:18px;}
+
+#lukiohome {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+#featured {
+    font-style: italic;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+}
 
 #buttonimg {
     padding-bottom: 3px;
@@ -34,6 +47,15 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 
 #link:hover {
     color: #710400;
+}
+
+#sublinks {
+    text-decoration: none;
+    color: #1e1efc;
+}
+
+#sublinks:hover {
+    color: #0202e5;
 }
 
 #copyRight {
