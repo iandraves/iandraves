@@ -1,8 +1,7 @@
 html{
     font-family:'Open Sans';
     height: 100%;
-    background: b5d2d6;
-    background: #71afff;
+    background: #f2f2ff;
     background-size: cover;
 }
 
@@ -21,6 +20,11 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 }
 
 #icon {
+    background-color: black;
+    border: 3px solid black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
     margin-left: 4px;
 }
 
@@ -62,11 +66,11 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     padding: 2px;
-    background: #c9ddff;
+    background: #a3ccff;
 }
 
 #button2:hover {
-    background: #b0cdfc;
+    background: #84bbff;
 }
 
 *, *:before, *:after{
