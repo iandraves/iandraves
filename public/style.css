@@ -72,11 +72,11 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     padding: 2px;
-    background: #c9ddff;
+    background: #d099ff;
 }
 
 #button1:hover {
-    background: #bc6dff;
+    background: #bc6dff;    
 }
 
 #button2 {

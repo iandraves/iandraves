@@ -1,46 +1,37 @@
 html{
     font-family:'Open Sans';
     height: 100%;
-    background: b5d2d6;
-    background: #bc6dff;
+    background: #f2f2ff;
     background-size: cover;
 }
 
-ul{
-    list-style-position: inside;
+h1{text-align:center;font-family:'Open Sans';}
+h2{text-align:center;font-family:'Open Sans';}
+b{text-align:center;font-family:'Open Sans';}
+p {text-align:center;font-family:'Open Sans';font-size:18px;}
+
+.input{
+    font-family: 'DINPro';
+    font-size: 16px;
+    border-color: black;
+    border-radius: 3px;
 }
 
-h1, h2{
-   text-align:center;
+.input:focus {
+    box-shadow: 0 0 10px #bc6dff;
 }
 
-p {
-    text-align: center;
-    font-size:18px;
-    font-weight: 300;
+#ok{
+    font-family: 'DINPro';
+    font-size: 16px;
+    margin-left: 3px;
+    border-color: black;
+    border-radius: 3px;
+    background-color: #bc6dff;
 }
 
-button:hover {
-    background: #f76666;
-}
-
-button {
-    border: 2px solid;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-}
-
-input {
-    border: 1.2px solid #000000;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    height: 22px;
-}
-
-input:focus {
-    box-shadow: 0px 0px 3px 1px #f76666;
+#ok:hover {
+    background-color: #b156ff;
 }
 
 #copyRight {
