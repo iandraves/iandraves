@@ -9,9 +9,9 @@ function imgProc() {
     var noerr = true;
     var edit = document.getElementById("say");
     var song;
-    var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('myCanvas');
 
-    placeImg.src = "test.png";
+    placeImg.src = picture;
 
     placeImg.onerror = function() { //If there is an error with the image source, it will tell the user
         display.className = 'hidden';
@@ -21,20 +21,18 @@ function imgProc() {
 
     if (noerr) { //Making sure that there is no image source error
         display.className = 'unhidden';
-        /*
-        var img = new Image();
-        img.setAttribute('crossOrigin', 'anonymous');
-        img.src = picture;*/
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        var img = document.getElementById("image");
-        ctx.drawImage(img, 10, 10);
 
-        console.log(c.toDataURL());
+
+        canvas.className = 'hidden';
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("image");
+        ctx.drawImage(img, 0, 0);
+        console.log(canvas.toDataURL());
+
         //placeImg.src = dataURL;
         const rgb = getAverageRGB(placeImg);
 
-        /*Calculating best song
+        //Calculating best song
         const totalRGB = rgb.r + rgb.b + rgb.g;
         if (totalRGB >= 0 && totalRGB <= 225) {
             song = "\"Cry Little Sister\", The Lost Boys";
@@ -47,11 +45,11 @@ function imgProc() {
         }
         else if (totalRGB >= 571 && totalRGB <= 765) {
             song = "\"Best Day of My Life,\" American Authors";
-        }*/
+        }
 
         console.log(rgb);
 
-        //edit.innerHTML = "<b>Suggested Song: </b>" + song;
+        edit.innerHTML = "<b>Suggested Song: </b>" + song;
     }
 }
 
