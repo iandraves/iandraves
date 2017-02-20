@@ -1,99 +1,101 @@
 //Ian Draves Copyright 2017 (C)
 
-//Function retrieves song
-function imgProc() {
-    //Creating variables and accessing HTML elements
-    var picture = document.getElementById('url').value;
-    var placeImg = document.getElementById("image");
-    var display = document.getElementById("display");
-    var noerr = true;
-    var edit = document.getElementById("say");
-    var song;
-    var canvas = document.getElementById('myCanvas');
+//Function for image drop
+function processImage(image) {
+    var songChoice = document.getElementById("song");
+    var img = document.getElementById('image');
 
-    placeImg.src = picture;
+    //Unhiding elements
+    img.className = 'unhiddenimg';
+    songChoice.className = 'unhidden';
 
-    placeImg.onerror = function() { //If there is an error with the image source, it will tell the user
-        display.className = 'hidden';
-        edit.className = 'hidden';
-        alert("The link you have put in is invalid!");
+    img.src = URL.createObjectURL(image);
+
+    //Making sure the slected file is an image
+    if (!image.name.match(/.(jpg|jpeg|png|gif)$/i)) {
+        alert('The selected file is not an image!');
+        img.className = 'hidden';
+        return;
     }
 
-    if (noerr) { //Making sure that there is no image source error
-        display.className = 'unhidden';
+    img.onload = function() {
+        //Defining variables
+        var song;
 
-
-        canvas.className = 'hidden';
-        var ctx = canvas.getContext("2d");
-        var img = document.getElementById("image");
-        ctx.drawImage(img, 0, 0);
-        console.log(canvas.toDataURL());
-
-        //placeImg.src = dataURL;
-        const rgb = getAverageRGB(placeImg);
-
-        //Calculating best song
-        const totalRGB = rgb.r + rgb.b + rgb.g;
-        if (totalRGB >= 0 && totalRGB <= 225) {
-            song = "\"Cry Little Sister\", The Lost Boys";
-        }
-        else if (totalRGB >= 226 && totalRGB <= 410) {
-            song = "\"Never Let Me Go,\" Rachel Portman";
-        }
-        else if (totalRGB >= 411 && totalRGB <= 570) {
-            song = "\"After Midnight,\" Eric Clapton";
-        }
-        else if (totalRGB >= 571 && totalRGB <= 765) {
-            song = "\"Best Day of My Life,\" American Authors";
-        }
-
+        var rgb = getAverageColor(img);
+        var rgbStr = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
         console.log(rgb);
 
-        edit.innerHTML = "<b>Suggested Song: </b>" + song;
-    }
+        //Calculating best song
+        const totalRGB = rgb.r + rgb.g + rgb.b;
+        if (rgb.r >= 208 && rgb.g >= 208 && rgb.b <= 55) { //If brightish-yellow
+            song = "<a href='https://www.youtube.com/watch?v=ZbZSe6N_BXs'>\"Happy\", Pharrell Williams</a>";
+        }
+        else if (rgb.r <= 40 && rgb.g <= 50 && rgb.b <= 170) { //If darkish-blue
+            song = "<a href='https://www.youtube.com/watch?v=IXdNnw99-Ic'>\"Wish You Were Here\", Pink Floyd</a>";
+        }
+        else if (rgb.r <= 180 && rgb.r >= 30 && rgb.g <= 180 &&
+                 rgb.g >= 30 && rgb.b <= 180 && rgb.b >= 0) { //If brownish
+            song = "<a href='https://www.youtube.com/watch?v=6E1pImAgers'>\"Forever And A Day\", Ian Brown</a>";
+        }
+        else if (rgb.r >= 200 && rgb.r <= 255 || rgb.g >= 200 &&
+                 rgb.g <= 255 || rgb.b >= 200 && rgb.b <= 255) { //If bright colors
+            song = "<a href='https://www.youtube.com/watch?v=nEt1bKGlCpM'>\"Idols\", Virtual Riot</a>";
+        }
+        else if (totalRGB >= 0 && totalRGB <= 225) { //If darker colors
+            song = "<a href='https://www.youtube.com/watch?v=PoeEMHSUVxE'>\"Cry Little Sister\", The Lost Boys</a>";
+        }
+        else if (totalRGB >= 226 && totalRGB <= 345) { //If slightly brighter than dark colors
+            song = "<a href='https://www.youtube.com/watch?v=OKRJfIPiJGY'>\"Bela Lugosi's Dead\", Bauhaus</a>";
+        }
+        else if (totalRGB >= 346 && totalRGB <= 498) { //If medium colors
+            song = "<a href='https://www.youtube.com/watch?v=zzjQg-JdwTg'>\"To Let Myself Go\", Ane Brun</a>";
+        }
+
+        //Showing user song
+        songChoice.innerHTML = "<b>Suggested Song: </b>" + song;
+    };
 }
 
-//Function that gets image average RGB
-function getAverageRGB(imgEl) {
-    var blockSize = 5, // only visit every 5 pixels
-        defaultRGB = {r:0,g:0,b:0}, // for non-supporting envs
-        canvas = document.createElement('canvas'),
-        context = canvas.getContext && canvas.getContext('2d'),
-        data, width, height,
-        i = -4,
-        length,
-        rgb = {r:0,g:0,b:0},
-        count = 0;
+//Function to get average rgb
+function getAverageColor(img) {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    var width = canvas.width = img.naturalWidth;
+    var height = canvas.height = img.naturalHeight;
 
-    if (!context) {
-        return defaultRGB;
+    ctx.drawImage(img, 0, 0);
+
+    var imageData = ctx.getImageData(0, 0, width, height);
+    var data = imageData.data;
+    var r = 0;
+    var g = 0;
+    var b = 0;
+
+    for (var i = 0, l = data.length; i < l; i += 4) {
+    r += data[i];
+    g += data[i+1];
+    b += data[i+2];
     }
 
-    height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
-    width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
+    r = Math.floor(r / (data.length / 4));
+    g = Math.floor(g / (data.length / 4));
+    b = Math.floor(b / (data.length / 4));
 
-    context.drawImage(imgEl, 0, 0);
-
-    try {
-        data = context.getImageData(0, 0, width, height);
-    } catch(e) {
-        /* security error, img on diff domain */alert('x');
-        return defaultRGB;
-    }
-
-    length = data.data.length;
-
-    while ( (i += blockSize * 4) < length ) {
-        ++count;
-        rgb.r += data.data[i];
-        rgb.g += data.data[i+1];
-        rgb.b += data.data[i+2];
-    }
-
-    // ~~ used to floor values
-    rgb.r = ~~(rgb.r/count);
-    rgb.g = ~~(rgb.g/count);
-    rgb.b = ~~(rgb.b/count);
-
-    return rgb;
+    return { r: r, g: g, b: b };
 }
+
+//When user hovers over page with image
+document.ondragover = function(event) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+};
+
+//When user drops image on page
+document.ondrop = function(event) {
+    event.preventDefault();
+    var images = event.dataTransfer.files;
+    for (var i = 0; i < images.length; i++) {
+        processImage(images[i]);
+    }
+};

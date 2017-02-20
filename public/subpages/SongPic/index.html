@@ -17,16 +17,9 @@
         <center>
         <h1>SongPic</h1>
         <p>Welcome to SongPic!<br />
-            SongPic is a cool way to convert any picture<br />
-            into music. To select a picture for SongPic to<br />
-            analyze, put in a link for an image below.</p>
-            <input value="Image Link" type="text" id="url" class="input" onclick="this.setSelectionRange(0, this.value.length)" />
-            <button onclick="imgProc()" id="ok">Ok</button><br /><br />
-            <div id="display" class="hidden">
-                <img id="image" crossOrigin="Anonymous">
-                <canvas id="myCanvas"/>
-            </div>
-            <p id="say"></p>
+            <div id='drop'><div id="plus">+</div> <div id="spacing">Drop Image Here</div><img id="image" class="hidden"/></div>
+            <br />
+            <p id="song" class="hidden"></p>
             <h2>More Information</h2>
             <p>SongPic will choose a song that makes sense in the<br />
                 context of a picture. An example would be, if you select<br />
@@ -38,6 +31,6 @@
                 © Ian Draves 2017
             </i>
         </center>
-        <script src="script.js"></script>
+        <script src='script.js'></script>
     </body>
 </html>

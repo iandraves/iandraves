@@ -10,28 +10,18 @@ h2{text-align:center;font-family:'Open Sans';}
 b{text-align:center;font-family:'Open Sans';}
 p {text-align:center;font-family:'Open Sans';font-size:18px;}
 
-.input{
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
+#plus {
+    display: inline;
+    color: #35b73b;
 }
 
-.input:focus {
-    box-shadow: 0 0 10px #bc6dff;
-}
-
-#ok{
-    font-family: 'DINPro';
-    font-size: 16px;
-    margin-left: 3px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #bc6dff;
-}
-
-#ok:hover {
-    background-color: #b156ff;
+#drop {
+    border: 2px solid #d099ff;
+    border-radius: 10px;
+    width: 30%;
+    color: #3f3f3f;
+    font-size: 26px;
+    line-height: 5;
 }
 
 #copyRight {
@@ -48,11 +38,18 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 }
 
 #image {
+    vertical-align: middle;
     width: 150px;
     height: 100px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    border: 2px solid black;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+
+#spacing {
+    padding-right: 20px;
+    display: inline;
 }
 
 .hidden {
@@ -61,4 +58,8 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 
 .unhidden {
     display: block;
+}
+
+.unhiddenimg {
+    display: inline;
 }
