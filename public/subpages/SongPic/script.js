@@ -34,8 +34,8 @@ function processImage(image) {
         else if (rgb.r <= 40 && rgb.g <= 50 && rgb.b <= 170) { //If darkish-blue
             song = "<a href='https://www.youtube.com/watch?v=IXdNnw99-Ic'>\"Wish You Were Here\", Pink Floyd</a>";
         }
-        else if (rgb.r <= 180 && rgb.r >= 30 && rgb.g <= 180 &&
-                 rgb.g >= 30 && rgb.b <= 180 && rgb.b >= 0) { //If brownish
+        else if (rgb.r <= 90 && rgb.r >= 40 && rgb.g <= 75 &&
+                 rgb.g >= 25 && rgb.b <= 50 && rgb.b >= 0) { //If brownish
             song = "<a href='https://www.youtube.com/watch?v=6E1pImAgers'>\"Forever And A Day\", Ian Brown</a>";
         }
         else if (rgb.r >= 200 && rgb.r <= 255 || rgb.g >= 200 &&
@@ -48,8 +48,25 @@ function processImage(image) {
         else if (totalRGB >= 226 && totalRGB <= 345) { //If slightly brighter than dark colors
             song = "<a href='https://www.youtube.com/watch?v=OKRJfIPiJGY'>\"Bela Lugosi's Dead\", Bauhaus</a>";
         }
-        else if (totalRGB >= 346 && totalRGB <= 498) { //If medium colors
-            song = "<a href='https://www.youtube.com/watch?v=zzjQg-JdwTg'>\"To Let Myself Go\", Ane Brun</a>";
+        else if (rgb.r <= 160 && rgb.r >= 100 && rgb.g <= 130 && rgb.g >= 90 && rgb.b <= 115 && rgb.b >= 70) { //If the image has lots of different colors
+            song = "<a href='https://www.youtube.com/watch?v=5wu7u9vjjY8'>\"Skinnamarink\", The Elephant Show</a>";
+        }
+        else { //If no good song was detected
+            //Getting random number for random generic song
+            var gensong = Math.floor((Math.random() * 4) + 1);
+
+            if (gensong == 1) {
+                song = "<a href='https://www.youtube.com/watch?v=0vo23H9J8o8'>\"Pride And Joy\", Stevie Ray Vaughan</a>";
+            }
+            if (gensong == 2) {
+                song = "<a href='https://www.youtube.com/watch?v=57RIlznOpDM'>\"Late in the Evening\", Paul Simon</a>";
+            }
+            if (gensong == 3) {
+                song = "<a href='https://www.youtube.com/watch?v=KbuGWgYLqWk'>\"Asleep\", The Smiths</a>";
+            }
+            if (gensong == 4) {
+                song = "<a href='https://www.youtube.com/watch?v=zzjQg-JdwTg'>\"To Let Myself Go\", Ane Brun</a>";
+            }
         }
 
         //Showing user song
