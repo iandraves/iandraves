@@ -42,7 +42,7 @@ function processImage(image) {
                  rgb.g <= 255 || rgb.b >= 200 && rgb.b <= 255) { //If bright colors
             song = "<a href='https://www.youtube.com/watch?v=nEt1bKGlCpM'>\"Idols\", Virtual Riot</a>";
         }
-        else if (rgb.r <= 160 && rgb.r >= 100 && rgb.g <= 130 && rgb.g >= 90 && rgb.b <= 115 && rgb.b >= 70) { //If the image has lots of different colors
+        else if (rgb.r <= 160 && rgb.r >= 100 && rgb.g <= 125 && rgb.g >= 70 && rgb.b <= 115 && rgb.b >= 70) { //If the image has lots of different colors
             song = "<a href='https://www.youtube.com/watch?v=5wu7u9vjjY8'>\"Skinnamarink\", The Elephant Show</a>";
         }
         else if (totalRGB >= 0 && totalRGB <= 225) { //If darker colors
