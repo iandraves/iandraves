@@ -2,7 +2,6 @@ html{
     font-family:'Open Sans';
     height: 100%;
     background: #f2f2ff;
-    background-size: cover;
 }
 
 h1{text-align:center;font-family:'Open Sans';}
@@ -54,12 +53,15 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     color: #710400;
 }
 
-#sublinks {
+#sublink {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 3px;
     text-decoration: none;
     color: #1e1efc;
 }
 
-#sublinks:hover {
+#sublink:hover {
     color: #0202e5;
 }
 
@@ -114,6 +116,22 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 
 #button3:hover {
     background: #dd5a5a;
+}
+
+#button4 {
+    vertical-align: middle;
+    font-size: 18px;
+    font-style: bold;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 2px;
+    background: #42f483;
+}
+
+#button4:hover {
+    background: #19ff6d;
 }
 
 *, *:before, *:after{
