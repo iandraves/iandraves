@@ -1,3 +1,6 @@
+/*Obtaining Open Sans font*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
 html{
     font-family:'Open Sans';
     height: 100%;
@@ -11,6 +14,12 @@ h4{text-align:center;font-family:'Open Sans';}
 b{text-align:center;font-family:'Open Sans';}
 p {text-align:center;font-family:'Open Sans';font-size:18px;}
 
+#divider {
+    margin: 0 auto;
+    width: 32.5%;
+    height: 45%;
+}
+
 #lukiohome {
     font-size: 15px;
     padding-bottom: 10px;
@@ -22,16 +31,6 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     padding-bottom: 3.5px;
 }
 
-#buttonimg {
-    padding-bottom: 3px;
-    vertical-align: middle;
-}
-
-#buttonimg1 {
-    padding-bottom: 3px;
-    vertical-align: middle;
-}
-
 #descimg {
     display: inline;
 }
@@ -39,8 +38,6 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
 #icon {
     background-color: black;
     border: 3px solid black;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
     border-radius: 50px;
     margin-left: 4px;
 }
@@ -53,15 +50,15 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     color: #710400;
 }
 
-#sublink {
+#subpageslink {
     padding: 4px;
     border: 2px solid black;
-    border-radius: 3px;
+    border-radius: 100px;
     text-decoration: none;
     color: #1e1efc;
 }
 
-#sublink:hover {
+#subpageslink:hover {
     color: #0202e5;
 }
 
@@ -70,80 +67,64 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     font-size: 15px;
 }
 
-#button1 {
+/*Styling for links to web apps*/
+#buttonimg {
+    height: 23px;
+    width: 23px;
+    padding: 3px;
     vertical-align: middle;
-    font-size: 18px;
-    font-style: bold;
-    border: 2px solid #000000;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    padding: 2px;
-    background: #d099ff;
 }
 
-#button1:hover {
-    background: #bc6dff;
-}
-
-#button2 {
+#lukiobtn {
     vertical-align: middle;
     font-size: 18px;
-    font-style: bold;
     border: 2px solid #000000;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
     padding: 2px;
     background: #a3ccff;
 }
 
-#button2:hover {
+#lukiobtn:hover {
     background: #84bbff;
 }
 
-#button3 {
+#songpicbtn {
     vertical-align: middle;
     font-size: 18px;
-    font-style: bold;
     border: 2px solid #000000;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    padding: 2px;
+    background: #d099ff;
+}
+
+#songpicbtn:hover {
+    background: #bc6dff;
+}
+
+#quizmakebtn {
+    vertical-align: middle;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 4px;
     padding: 2px;
     background: #ff6868;
 }
 
-#button3:hover {
+#quizmakebtn:hover {
     background: #dd5a5a;
 }
+/*End of styling for links to web apps*/
 
-#button4 {
-    vertical-align: middle;
-    font-size: 18px;
-    font-style: bold;
-    border: 2px solid #000000;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    padding: 2px;
-    background: #42f483;
-}
 
-#button4:hover {
-    background: #19ff6d;
-}
-
+/*Navigation Bar*/
 *, *:before, *:after{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-/*| Navigation |*/
 nav{
   position: relative;
   top: auto;
@@ -156,7 +137,6 @@ nav{
 nav ul{
     list-style: none;
     position: relative;
-    float: center;
     margin-right: 100px;
     display: inline-table;
 }
@@ -206,3 +186,4 @@ nav ul ul ul {
     left: 100%;
     top:0;
 }
+/* End of navigation bar*/
