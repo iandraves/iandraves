@@ -2,13 +2,12 @@
 <html lang="en">
     <head>
         <title id="heading">QuizMake</title>
-            <script>
-                var loc = window.location.href+'';
-                if (loc.indexOf('http://')==0){
-                    window.location.href = loc.replace('http://','https://');
-                }
-            </script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script>
+            var loc = window.location.href+'';
+            if (loc.indexOf('http://')==0){
+                window.location.href = loc.replace('http://','https://');
+            }
+        </script>
         <meta charset="utf-8">
         <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,7 +27,6 @@
             <button id="print" onclick="printpage()" class="hidden">Print Quiz</button>
             <button id="create" onclick="createQuiz()" alt="Create Quiz">Create Quiz</button>
             <p><a id="otherprograms" href="https://mrlittleman.gitlab.io/subpages.html">Other Programs</a></p>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <i id="copyRight">
                 © Ian Draves 2017
             </i>
