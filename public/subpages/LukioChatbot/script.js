@@ -46,6 +46,9 @@ function process() {
             edit.innerHTML="<b>Lukio: </b>Hey there!";
         }
     }
+    else if (input.includes("open the pod bay doors")) {
+        edit.innerHTML="<b>Lukio: </b>I'm sorry, I'm afraid I can't do that.";
+    }
     else if (input.includes("bye") || input.includes("see ya") || input.includes("farewell")) {
         //Getting random number for more human like response
         var byeres = Math.floor((Math.random() * 4) + 1);

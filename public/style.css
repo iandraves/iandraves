@@ -1,6 +1,3 @@
-/*Obtaining Open Sans font*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-
 html{
     font-family:'Open Sans';
     height: 100%;
