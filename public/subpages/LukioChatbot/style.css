@@ -17,24 +17,8 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     color: #0d00a3;
 }
 
-#send{
-    font-family: 'DINPro';
-    font-size: 16px;
-    margin-left: 3px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #84ffb7;
-}
-
-#send:hover {
-    background-color: #2cf982;
-}
-
-#userinput{
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
+.input-group {
+  width: 280px;
 }
 
 #copyRight {

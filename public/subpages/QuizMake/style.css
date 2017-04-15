@@ -19,62 +19,11 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     text-align: left;
 }
 
-#print {
-    margin-top: 8px;
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #ffcf23;
-}
-
-#print:hover {
-    background-color: #ffc700;
-}
-
-#finish {
-    margin-top: 8px;
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #84ffb7;
-}
-
-#finish:hover {
-    background-color: #2cf982;
-}
-
 .quesinput {
     font-family: 'DINPro';
     font-size: 16px;
     border-color: black;
     border-radius: 3px;
-}
-
-#newques {
-    margin-top: 15px;
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #ff6868;
-}
-
-#newques:hover {
-    background-color: #dd5a5a;
-}
-
-#create {
-    font-family: 'DINPro';
-    font-size: 16px;
-    border-color: black;
-    border-radius: 3px;
-    background-color: #ff6868;
-}
-
-#create:hover {
-    background-color: #dd5a5a;
 }
 
 .hidden {

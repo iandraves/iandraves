@@ -13,8 +13,8 @@ function createQuiz() {
     var mainui = document.getElementById('mainui');
 
     //Hiding elements
-    document.getElementById('create').className = 'hidden';
-    document.getElementById('info').className = 'hidden';
+    document.getElementById('create').style = 'display: none';
+    document.getElementById('info').style = 'display: none';
 
     //Showing elements
     title1.innerHTML += "<b>Quiz Name: </b>";
@@ -25,8 +25,8 @@ function createQuiz() {
     usrinput.innerHTML += "<br /><input type='text' class='quesinput' id='" + inputval + "'size='30'><br />";
     mainui.appendChild(ques);
     mainui.appendChild(usrinput);
-    document.getElementById('newques').className = 'unhidden';
-    document.getElementById('finish').className = 'unhidden';
+    document.getElementById('newques').style = 'display: block';
+    document.getElementById('finish').style = 'display: block';
 }
 
 //Function that creates new question
@@ -50,14 +50,14 @@ function newQues() {
 //Function that writes quiz to document
 function finish() {
     //Showing elements
-    document.getElementById('print').className = 'unhidden';
+    document.getElementById('print').style = 'display: block';
 
     //Hiding elements
-    document.getElementById('newques').className = 'hidden';
-    document.getElementById('finish').className = 'hidden';
-    document.getElementById('mainui').className = 'hidden';
-    document.getElementById('otherprograms').className = 'hidden';
-    document.getElementById('copyRight').className = 'hidden';
+    document.getElementById('newques').style = 'display: none';
+    document.getElementById('finish').style = 'display: none';
+    document.getElementById('mainui').style = 'display: none';
+    document.getElementById('otherprograms').style = 'display: none';
+    document.getElementById('copyRight').style = 'display: none';
 
     //Writing quiz
     for (var i = 1; i <= inputval; i++) {
@@ -77,17 +77,17 @@ function finish() {
     document.getElementById('title').innerHTML = document.getElementById('title3').value;
     document.getElementById('title').id = 'alignment';
     document.getElementById('heading').innerHTML = document.getElementById('title3').value;
-    document.getElementById('print').className = 'alignment';
+    document.getElementById('print').style = 'alignment';
 }
 
 //Function that prints the quiz
 function printpage() {
     //Hiding print page element
-    document.getElementById('print').className = 'hidden';
+    document.getElementById('print').style = 'display: none';
 
     //Pressing ctrl+p
     window.print();
 
     //Showing print page element
-    document.getElementById('print').className = 'alignment';
+    document.getElementById('print').style = 'alignment';
 }

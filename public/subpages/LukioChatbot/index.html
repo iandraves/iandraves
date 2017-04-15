@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300" />
         <link rel="icon" href="images/LukioIcon.ico">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta https-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +22,13 @@
             <h1>Lukio Chatbot</h1>
             <p>Welcome to Lukio Chatbot! Lukio Chatbot is a robot that you can talk <br />
                to, say anything you would like, and Lukio will reply!</p>
-            <b>Say: </b><input id="userinput" type="text" size="30" onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('send').click()">
-                        <button id="send" onclick="process()">Send!</button>
+            <div class="input-group">
+                <input name="say" id="userinput" type="text" onkeydown = "if (event.keyCode == 13){process()}" class="form-control" placeholder="Say...">
+                <span class="input-group-btn">
+                    <button onclick="process()" id="send" class="btn btn-success" type="button">Send</button>
+                </span>
+            </div>
+            <br />
             <p id="say"></p>
             <p><a id="otherprograms" href="https://mrlittleman.gitlab.io/subpages.html">Other Programs</a></p>
             <i id="copyRight">
