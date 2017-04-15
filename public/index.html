@@ -10,10 +10,10 @@
         </script>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="icon" href="images/icon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
         <nav role='navigation'>
-        <a href="index.html"><img src="images/icon.ico" width="50px" height="50" id="icon" /></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="subpages.html">Online Programs</a></li>
@@ -42,12 +42,20 @@
             <p id="lukiohome">Lukio Chatbot is an online friendly robot.<br />
                 You simply type a message and Lukio will respond.
             </p>
-            <a href="subpages/LukioChatbot/index.html"><button id="lukiobtn"><b>Talk to Lukio!<img src="subpages/LukioChatbot/images/LukioIcon.png" id="buttonimg" /></b></button></a>
+            <a href="subpages/LukioChatbot/index.html"><button class="btn btn-default btn-md"><b>Talk to Lukio!<img src="subpages/LukioChatbot/images/LukioIcon.png" id="buttonimg" /></b></button></a>
             <br />
             <br />
             <i id="copyRight">
                 This page is created by a developer working at <a id="link" href="https://execodeable.gitlab.io">Execodeable.</a><br />
-                © Ian Draves 2017
+                <footer id="footer" class="footer">
+                    <center>
+                        <script>
+                            document.write('&copy;');
+                            document.write(' Ian Draves ');
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </center>
+                </footer>
             </i>
         </center>
     </body>

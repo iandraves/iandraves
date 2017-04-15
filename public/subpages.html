@@ -10,9 +10,9 @@
         </script>
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300" />
         <link rel="icon" href="images/icon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <nav role='navigation'>
-            <a href="index.html"><img src="images/icon.ico" width="50px" height="50" id="icon" /></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="subpages.html">Online Programs</a></li>
@@ -32,7 +32,7 @@
                 You simply type a message and Lukio will respond.
             </p>
             <br />
-            <a href="subpages/LukioChatbot/index.html"><button id="lukiobtn"><b>Talk to Lukio!<img src="subpages/LukioChatbot/images/LukioIcon.png" width="23px" height="23px" id="buttonimg" /></b></button></a>
+            <a href="subpages/LukioChatbot/index.html"><button class="btn btn-default btn-lg"><b>Talk to Lukio!<img src="subpages/LukioChatbot/images/LukioIcon.png" width="23px" height="23px" id="buttonimg" /></b></button></a>
             <br />
             <br />
             <img id="divider" src="images/divider.png"/>
@@ -46,7 +46,7 @@
                 that image.
             </p>
             <br />
-            <a href="subpages/SongPic/index.html"><button id="songpicbtn"><b>Try It Out!<img src="subpages/SongPic/images/icon.png" id="buttonimg" /></b></button></a>
+            <a href="subpages/SongPic/index.html"><button class="btn btn-default btn-lg"><b>Try It Out!<img src="subpages/SongPic/images/icon.png" id="buttonimg" /></b></button></a>
             <br />
             <br />
             <img id="divider" src="images/divider.png"/>
@@ -58,11 +58,19 @@
                 semester test QuizMake gives a nice experience.
             </p>
             <br />
-            <a href="subpages/QuizMake/index.html"><button id="quizmakebtn"><b>Make a Quiz!<img src="subpages/QuizMake/images/icon.png" id="buttonimg" /></b></button></a>
+            <a href="subpages/QuizMake/index.html"><button class="btn btn-default btn-lg"><b>Make a Quiz!<img src="subpages/QuizMake/images/icon.png" id="buttonimg" /></b></button></a>
             <br />
             <br />
             <i id="copyRight">
-                © Ian Draves 2017
+                <footer id="footer" class="footer">
+                    <center>
+                        <script>
+                            document.write('&copy;');
+                            document.write(' Ian Draves ');
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </center>
+                </footer>
             </i>
         </center>
     </body>
