@@ -13,20 +13,19 @@ function createQuiz() {
     var mainui = document.getElementById('mainui');
 
     //Hiding elements
-    document.getElementById('create').style = 'display: none';
+    document.getElementById('creator').style = 'display: none';
     document.getElementById('info').style = 'display: none';
 
     //Showing elements
     title1.innerHTML += "<b>Quiz Name: </b>";
-    title2.innerHTML += "<br /><input type='text' class='quesinput' id='title3' size='30'><br />";
+    title2.innerHTML += "<br /><input type='text' class='form-control input-sm' id='title3' style='width: 30%;'><br />";
     mainui.appendChild(title1);
     mainui.appendChild(title2);
     ques.innerHTML += "<br /><b>Question: " + quesnum + " </b>";
-    usrinput.innerHTML += "<br /><input type='text' class='quesinput' id='" + inputval + "'size='30'><br />";
+    usrinput.innerHTML += "<br /><input type='text' class='form-control input-sm' id='" + inputval + "'style='width: 30%;'><br />";
     mainui.appendChild(ques);
     mainui.appendChild(usrinput);
-    document.getElementById('newques').style = 'display: block';
-    document.getElementById('finish').style = 'display: block';
+    document.getElementById('nodisp').style = 'display: block';
 }
 
 //Function that creates new question
@@ -42,7 +41,7 @@ function newQues() {
 
     //Editing looks of new question
     ques.innerHTML += "<br /><b>Question: " + quesnum + " </b>";
-    usrinput.innerHTML += "<br /><input type='text' class='quesinput' id='" + inputval + "'size='30'><br />";
+    usrinput.innerHTML += "<br /><input type='text' class='form-control input-sm' id='" + inputval + "'style='width: 30%;'><br />";
     mainui.appendChild(ques);
     mainui.appendChild(usrinput);
 }
@@ -53,8 +52,7 @@ function finish() {
     document.getElementById('print').style = 'display: block';
 
     //Hiding elements
-    document.getElementById('newques').style = 'display: none';
-    document.getElementById('finish').style = 'display: none';
+    document.getElementById('nodisp').style = 'display: none';
     document.getElementById('mainui').style = 'display: none';
     document.getElementById('otherprograms').style = 'display: none';
     document.getElementById('copyRight').style = 'display: none';

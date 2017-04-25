@@ -25,21 +25,31 @@
                 To create a quiz, press the button below.</p>
             <div id="mainui"></div>
             <br />
-            <button id="create" onclick="createQuiz()" alt="Create Quiz" class="btn btn-danger">Create Quiz</button>
-            <br />
-            <br />
-            <button id="newques" onclick="newQues()" style="display:none;" class="btn btn-danger">+ Add Question</button>
-            <br />
-            <br />
-            <button id="finish" onclick="finish()" style="display:none;" class="btn btn-success">Finish Quiz</button>
-            <br />
-            <br />
-            <button id="print" onclick="printpage()" style="display:none;" class="btn btn-warning">Print Quiz</button>
-            <br />
-            <br />
+            <div id="creator">
+                <button id="create" onclick="createQuiz()" alt="Create Quiz" class="btn btn-danger">Create Quiz</button>
+                <br />
+                <br />
+            </div>
+            <div id="nodisp" style="display: none;">
+                <button id="newques" onclick="newQues()" class="btn btn-danger">+ Add Question</button>
+                <br />
+                <br />
+                <button id="finish" onclick="finish()" class="btn btn-success">Finish Quiz</button>
+                <br />
+                <br />
+            </div>
+            <button id="print" onclick="printpage()" style="display:none;align: left;" class="btn btn-warning">Print Quiz</button>
             <p><a id="otherprograms" href="https://mrlittleman.gitlab.io/subpages.html">Other Programs</a></p>
             <i id="copyRight">
-                © Ian Draves 2017
+                <footer id="footer" class="footer">
+                    <center>
+                        <script>
+                            document.write('&copy;');
+                            document.write(' Ian Draves ');
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </center>
+                </footer>
             </i>
             <script src='script.js'></script>
         </center>
