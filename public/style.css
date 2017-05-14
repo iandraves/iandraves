@@ -1,7 +1,10 @@
 html{
     font-family:'Open Sans';
     height: 100%;
-    background: #ffffff;
+}
+
+body{
+    background-color: #ffcb62;
 }
 
 h1{text-align:center;font-family:'Open Sans';}
@@ -17,11 +20,6 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     height: 45%;
 }
 
-#lukiohome {
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-
 #featured {
     font-style: italic;
     padding-top: 3.5px;
@@ -32,12 +30,6 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     display: inline;
 }
 
-#icon {
-    background-color: black;
-    border: 3px solid black;
-    border-radius: 50px;
-    margin-left: 4px;
-}
 
 #link {
     color: #004179;
@@ -63,15 +55,6 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;}
     text-align: center;
     font-size: 15px;
 }
-
-/*Styling for links to web apps*/
-#buttonimg {
-    height: 23px;
-    width: 23px;
-    padding: 3px;
-    vertical-align: middle;
-}
-
 
 /*Navigation Bar*/
 *, *:before, *:after{
