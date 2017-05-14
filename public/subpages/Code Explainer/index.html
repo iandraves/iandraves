@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Code Explainer</title>
+        <script>
+            var loc = window.location.href+'';
+            if (loc.indexOf('http://')==0){
+                window.location.href = loc.replace('http://','https://');
+            }
+        </script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	    <script src="jquery-linedtextarea.js"></script>
+	    <link href="jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="keywords" content="code explainer, code explanation, code explinator">
+    </head>
+    <body>
+        <center>
+            <h1>Code Explainer</h1>
+            <textarea class="lined" id="edittext" style="width: 50%;" rows="30"></textarea>
+            <div style="display: none;" id="descArea">
+                <p>Description: </p>
+                <p id="desc"></p>
+            </div>
+            <br>
+            <button class="btn btn-lg btn-success" onclick="processCode()">Explain This Code!</button>
+            <br>
+            <br>
+            <p><a id="otherprograms" href="https://mrlittleman.gitlab.io/subpages.html">Other Programs</a></p>
+            <i id="copyRight">
+                © Ian Draves 2017
+            </i>
+        </center>
+        <script src='script.js'></script>
+        <script>
+            $(function() {
+            	$(".lined").linedtextarea(
+            		{selectedLine: 1}
+            	);
+            });
+        </script>
+    </body>
+</html>

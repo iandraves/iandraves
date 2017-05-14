@@ -28,24 +28,24 @@ function processImage(image) {
 
         //Calculating best song
         const totalRGB = rgb.r + rgb.g + rgb.b;
-        if (rgb.r >= 208 && rgb.g >= 208 && rgb.b <= 55) { //If brightish-yellow
+        if (rgb.r >= 208 && rgb.g >= 208 && rgb.b <= 55) { //If brightish-yellow (Happy)
             song = "<a href='https://www.youtube.com/watch?v=ZbZSe6N_BXs'>\"Happy\", Pharrell Williams</a>";
         }
-        else if (rgb.r <= 40 && rgb.g <= 50 && rgb.b <= 170) { //If darkish-blue
+        else if (rgb.r <= 40 && rgb.g <= 50 && rgb.b <= 170) { //If darkish-blue (Sad)
             song = "<a href='https://www.youtube.com/watch?v=IXdNnw99-Ic'>\"Wish You Were Here\", Pink Floyd</a>";
         }
         else if (rgb.r <= 90 && rgb.r >= 40 && rgb.g <= 75 &&
-                 rgb.g >= 25 && rgb.b <= 50 && rgb.b >= 0) { //If brownish
+                 rgb.g >= 25 && rgb.b <= 50 && rgb.b >= 0) { //If brownish (Neautral)
             song = "<a href='https://www.youtube.com/watch?v=6E1pImAgers'>\"Forever And A Day\", Ian Brown</a>";
         }
         else if (rgb.r >= 200 && rgb.r <= 255 || rgb.g >= 200 &&
-                 rgb.g <= 255 || rgb.b >= 200 && rgb.b <= 255) { //If bright colors
+                 rgb.g <= 255 || rgb.b >= 200 && rgb.b <= 255) { //If bright colors (Happy/Excited)
             song = "<a href='https://www.youtube.com/watch?v=nEt1bKGlCpM'>\"Idols\", Virtual Riot</a>";
         }
-        else if (rgb.r <= 160 && rgb.r >= 100 && rgb.g <= 125 && rgb.g >= 70 && rgb.b <= 115 && rgb.b >= 70) { //If the image has lots of different colors
+        else if (rgb.r <= 160 && rgb.r >= 100 && rgb.g <= 125 && rgb.g >= 70 && rgb.b <= 115 && rgb.b >= 70) { //If the image has lots of different colors (Colorful Song)
             song = "<a href='https://www.youtube.com/watch?v=5wu7u9vjjY8'>\"Skinnamarink\", The Elephant Show</a>";
         }
-        else if (totalRGB >= 0 && totalRGB <= 225) { //If darker colors
+        else if (totalRGB >= 0 && totalRGB <= 225) { //If darker colors (Dark song)
             song = "<a href='https://www.youtube.com/watch?v=PoeEMHSUVxE'>\"Cry Little Sister\", The Lost Boys</a>";
         }
         else if (totalRGB >= 226 && totalRGB <= 345) { //If slightly brighter than dark colors
