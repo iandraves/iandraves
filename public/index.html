@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Purpthepuppet</title>
+        <title>Littleman</title>
         <script>
             var loc = window.location.href+'';
             if (loc.indexOf('http://')==0){
@@ -11,12 +11,13 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="icon" href="images/icon.jpg">
+        <link rel="icon" href="images/icon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
         <nav role='navigation'>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="content.html">Content</a></li>
+                <li><a href="subpages.html">Online Programs</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,14 +30,21 @@
             <h1>Hello!</h1>
             <p>
                 Hello! This page is created by Ian Draves and contains<br />
-                Purpthepuppet's content. Purpthepuppet is a YouTube channel<br>
-                that is awesome!
+                his online programs.
             </p>
+            <br />
+            <h3><a id="subpageslink" href="subpages.html">Online Programs</a></h3>
+            <br />
             <hr style="width: 28%;border-top: 1px solid black;">
-            <h2>Videos:</h2>
-            <iframe style="border: 2px solid black;border-radius: 4px;" width="560" height="315" src="https://www.youtube.com/embed/UWN2VdDiBU8?list=PLO7GmynT_8K2ntZo7CIOAcG0ZX4JiqT4o" frameborder="0" allowfullscreen></iframe>
-            <br>
-            <br>
+            <br />
+            <h2>Featured Program:</h2>
+            <h3 id="featured">Lukio Chatbot</h3>
+            <p id="lukiohome">Lukio Chatbot is an online friendly robot.<br />
+                You simply type a message and Lukio will respond.
+            </p>
+            <a href="subpages/LukioChatbot/index.html"><button class="btn btn-default btn-md"><b>Talk to Lukio!<img src="subpages/LukioChatbot/images/LukioIcon.png" id="buttonimg" /></b></button></a>
+            <br />
+            <br />
             <i id="copyRight">
                 This page is created by a developer working at <a id="link" href="https://execodeable.gitlab.io">Execodeable.</a><br />
                 <footer id="footer" class="footer">
