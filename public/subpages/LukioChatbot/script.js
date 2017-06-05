@@ -13,6 +13,9 @@ function process() {
     //Creating variables
     var edit = document.getElementById("say");
 
+    //Adding line between bottom of page
+    document.getElementById('line').innerHTML = '<hr style="width: 12%;border-top: 1px solid black;">';
+
     //Generating response and responding
     if (input.includes("hey,")) {
         //Getting random number for more human like response
