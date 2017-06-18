@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+</head>
+<body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+function openPy() {
+    $.ajax({
+       url: "script.py",
+       success: function(response) {
+         // here you do whatever you want with the response variable
+	 console.log("success")
+       }
+    });
+}
+</script>
+<center>
+<h1>Press the button below!</h1>
+<button onclick="openPy()">Press Me!</button>
+</center>
+</body>
+</html>
