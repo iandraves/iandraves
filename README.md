@@ -1,6 +1,6 @@
-# Ian Draves Web Page
+# iandraves.github.io - Portfolio Site
 
-[iandraves.github.io](https://iandraves.github.io) is a fully open-source web page that contains all of my projects for easy access and, in the future, documentation for libraries that I may create. Most of the projects found on this page will be coded in Javascript or Python for anyone interested in editing them. All of the projects on this webpage can also be found on my Github page.
+[iandraves.github.io](https://iandraves.github.io) is my portfolio site that contains information about me and my projects. Primarily, this webpage functions as a basic landing page for me as an independent, open source developer and links back to my GitHub.
 
-# Projects
-All of my projects are posted on this website [here](https://iandraves.github.io/subpages.html)
+## Support Me
+Like my work? Please consider [supporting me](https://paypal.me/iandraves)
